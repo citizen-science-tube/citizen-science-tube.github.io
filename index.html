@@ -14,6 +14,9 @@
   .tag { color:var(--muted); margin:0 0 32px; }
   h2 { color:var(--cyan); font-size:1.1rem; margin-top:36px; }
   a { color:var(--cyan); }
+  .yt { display:flex; gap:12px; align-items:flex-start; background:rgba(255,255,255,.06); border:1px solid rgba(34,211,238,.3); border-radius:10px; padding:14px 16px; margin-top:28px; }
+  .yt svg { flex:none; margin-top:3px; }
+  .links { margin-top:20px; font-weight:600; }
   footer { margin-top:48px; color:var(--muted); font-size:.9rem; }
 </style>
 </head>
@@ -27,7 +30,12 @@
   <h2>Citizen Science Uploader</h2>
   <p>Citizen Science Uploader is a private tool used only by the owner of the Citizen Science YouTube channel. It uses the YouTube Data API to upload and schedule videos produced for the channel. It is not offered to the public and does not access any other user's account.</p>
 
-  <p><a href="privacy.html">Privacy Policy</a></p>
+  <div class="yt">
+    <svg width="28" height="20" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg>
+    <span>This tool uses <strong>YouTube API Services</strong>. By using it you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</span>
+  </div>
+
+  <p class="links"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
 
   <footer>Contact: <a href="mailto:citizen.science.tube@gmail.com">citizen.science.tube@gmail.com</a></footer>
 </main>
