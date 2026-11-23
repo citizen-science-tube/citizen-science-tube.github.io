@@ -1,43 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Citizen Science</title>
-<style>
-  :root { --navy:#0b1d3a; --cyan:#22d3ee; --text:#e6eef8; --muted:#9fb3cc; }
-  * { box-sizing:border-box; }
-  body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--navy); color:var(--text); line-height:1.6; }
-  main { max-width:720px; margin:0 auto; padding:64px 20px; }
-  h1 { font-size:2.4rem; margin:0 0 4px; letter-spacing:.04em; }
-  h1 span { color:var(--cyan); }
-  .tag { color:var(--muted); margin:0 0 32px; }
-  h2 { color:var(--cyan); font-size:1.1rem; margin-top:36px; }
-  a { color:var(--cyan); }
-  .yt { display:flex; gap:12px; align-items:flex-start; background:rgba(255,255,255,.06); border:1px solid rgba(34,211,238,.3); border-radius:10px; padding:14px 16px; margin-top:28px; }
-  .yt svg { flex:none; margin-top:3px; }
-  .links { margin-top:20px; font-weight:600; }
-  footer { margin-top:48px; color:var(--muted); font-size:.9rem; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Paste the Google Search Console verification meta tag here, e.g.:
+  <meta name="google-site-verification" content="XXXXXXXXXXXXXXXX" /> -->
+  <title>Citizen Science Uploader</title>
+  <meta name="description" content="Citizen Science Uploader is a private tool that uploads and schedules educational science videos to the Citizen Science YouTube channel using the YouTube Data API.">
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; line-height: 1.65; color: #1d1d1f; }
+    h1 { font-size: 2rem; margin-bottom: .2em; }
+    h2 { margin-top: 1.8em; font-size: 1.25rem; }
+    .tag { color: #555; margin-top: 0; }
+    footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #ddd; font-size: .9rem; color: #555; }
+    a { color: #0b57d0; }
+  </style>
 </head>
 <body>
-<main>
-  <h1><span>[</span> CITIZEN SCIENCE</h1>
-  <p class="tag">Science, History, Technology</p>
+  <header>
+    <h1>Citizen Science Uploader</h1>
+    <p class="tag">The publishing tool behind the <strong>Citizen Science</strong> YouTube channel.</p>
+  </header>
 
-  <p>Citizen Science is a YouTube channel about the most interesting stories in science, history and technology, explained in a clear and friendly way.</p>
+  <main>
+    <h2>What is Citizen Science Uploader?</h2>
+    <p>
+      Citizen Science Uploader is a small web application that uploads and schedules videos to the
+      <a href="https://www.youtube.com/@citizen-science-tube">Citizen Science</a> YouTube channel.
+      Citizen Science is an educational channel that explains science, history and technology
+      in a clear, friendly way.
+    </p>
 
-  <h2>Citizen Science Uploader</h2>
-  <p>Citizen Science Uploader is a private tool used only by the owner of the Citizen Science YouTube channel. It uses the YouTube Data API to upload and schedule videos produced for the channel. It is not offered to the public and does not access any other user's account.</p>
+    <h2>What the app does</h2>
+    <ul>
+      <li>Uploads finished episode video files to the Citizen Science YouTube channel.</li>
+      <li>Sets each video's title, description, tags, thumbnail, privacy status and publish date.</li>
+      <li>Schedules videos so they go public at a planned time.</li>
+    </ul>
 
-  <div class="yt">
-    <svg width="28" height="20" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg>
-    <span>This tool uses <strong>YouTube API Services</strong>. By using it you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</span>
-  </div>
+    <h2>Who can use it</h2>
+    <p>
+      The app is used only by the owner of the Citizen Science channel to manage that channel.
+      It does not offer accounts to the public and does not access any other user's YouTube channel or data.
+      This page is public and needs no login.
+    </p>
 
-  <p class="links"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+    <h2>How it uses Google data</h2>
+    <p>
+      The app signs in with Google OAuth and requests only the
+      <code>https://www.googleapis.com/auth/youtube.upload</code> scope, which it uses solely to upload
+      videos and their metadata to the owner's channel. Details are in the
+      <a href="privacy.html">Privacy Policy</a>.
+    </p>
 
-  <footer>Contact: <a href="mailto:citizen.science.tube@gmail.com">citizen.science.tube@gmail.com</a></footer>
-</main>
+    <h2>Content policy</h2>
+    <p>
+      Citizen Science Uploader publishes only original educational videos made for the Citizen Science channel.
+      The app does not create, edit, generate or upload sexually explicit or intimate imagery of any kind,
+      including AI-generated non-consensual intimate imagery (NCII), and it does not use Google APIs for that purpose.
+    </p>
+
+    <h2>YouTube API Services</h2>
+    <p>
+      Citizen Science Uploader uses YouTube API Services. By using it you agree to the
+      <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and your data is handled under the
+      <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+    </p>
+  </main>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> ·
+    <a href="terms.html">Terms of Service</a> ·
+    Contact: <a href="mailto:citizen.science.tube@gmail.com">citizen.science.tube@gmail.com</a>
+  </footer>
 </body>
 </html>

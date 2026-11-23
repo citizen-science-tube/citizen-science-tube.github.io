@@ -1,44 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy</title>
-<style>
-  :root { --navy:#0b1d3a; --cyan:#22d3ee; --text:#e6eef8; --muted:#9fb3cc; }
-  * { box-sizing:border-box; }
-  body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--navy); color:var(--text); line-height:1.6; }
-  main { max-width:720px; margin:0 auto; padding:56px 20px; }
-  h1 { font-size:2rem; margin:0 0 4px; }
-  h2 { color:var(--cyan); font-size:1.1rem; margin-top:32px; }
-  a { color:var(--cyan); }
-  .muted { color:var(--muted); }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – Citizen Science Uploader</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; line-height: 1.65; color: #1d1d1f; }
+    h2 { margin-top: 1.8em; font-size: 1.2rem; }
+    table { border-collapse: collapse; width: 100%; }
+    td, th { border: 1px solid #ddd; padding: 8px; text-align: left; vertical-align: top; }
+    a { color: #0b57d0; }
+  </style>
 </head>
 <body>
-<main>
-  <h1>Privacy Policy</h1>
-  <p class="muted">Citizen Science Uploader · Last updated: October 17, 2026</p>
+  <p><a href="index.html">← Citizen Science Uploader</a></p>
+  <h1>Privacy Policy – Citizen Science Uploader</h1>
+  <p><em>Last updated: November 23, 2026</em></p>
 
-  <h2>About this application</h2>
-  <p>Citizen Science Uploader is a private, single-user tool operated by the owner of the Citizen Science YouTube channel. Its only purpose is to upload and schedule videos to that channel. It is not available to the public.</p>
+  <p>
+    This Privacy Policy explains how <strong>Citizen Science Uploader</strong> ("the app", "we") accesses, uses,
+    stores, shares and deletes data, including data obtained from Google APIs. The app is operated by the owner of the
+    Citizen Science YouTube channel. Contact: <a href="mailto:citizen.science.tube@gmail.com">citizen.science.tube@gmail.com</a>.
+  </p>
 
-  <h2>Use of YouTube API Services</h2>
-  <p>This application uses YouTube API Services. By using it, you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Information handled through YouTube API Services is also subject to the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+  <h2>1. What the app is</h2>
+  <p>
+    Citizen Science Uploader is a single-user tool that uploads and schedules educational videos to the
+    Citizen Science YouTube channel. It is used only by the channel owner and does not serve other users.
+  </p>
 
-  <h2>Information accessed</h2>
-  <p>With the owner's authorization, the application uses the YouTube upload permission to send video files and their metadata (title, description, tags, privacy and scheduling settings) to the channel owner's YouTube account. It does not read, collect or store data about any other user, viewer or channel.</p>
+  <h2>2. Google user data we access</h2>
+  <p>The app requests one OAuth scope:</p>
+  <table>
+    <tr><th>Scope</th><th>Why we need it</th></tr>
+    <tr>
+      <td><code>https://www.googleapis.com/auth/youtube.upload</code></td>
+      <td>To upload video files to the owner's YouTube channel and set their metadata (title, description, tags, thumbnail, privacy status, scheduled publish time).</td>
+    </tr>
+  </table>
+  <p>
+    The app does <strong>not</strong> read your Gmail, contacts, Drive files, watch history, subscriptions, comments,
+    or any data about other YouTube users, viewers or channels.
+  </p>
 
-  <h2>How information is stored</h2>
-  <p>The application stores only the OAuth access credentials needed to upload on the owner's behalf and the IDs of videos it has uploaded, on a private server controlled by the channel owner. No information is sold, shared with third parties or used for advertising.</p>
+  <h2>3. Data we collect and store</h2>
+  <ul>
+    <li><strong>OAuth tokens</strong> (access token and refresh token) issued by Google, so the app can upload on the owner's behalf.</li>
+    <li><strong>IDs of uploaded videos</strong> and their scheduling status, so the app can track what was published.</li>
+    <li><strong>Video files and metadata</strong> prepared by the owner, held only temporarily during upload.</li>
+  </ul>
+  <p>We do not collect names, email addresses, location, payment information, or analytics/tracking data. The app uses no advertising or tracking cookies.</p>
 
-  <h2>Revoking access</h2>
-  <p>Access can be revoked at any time from the <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>. Stored credentials are deleted when access is revoked or the application is no longer used.</p>
+  <h2>4. How we use the data</h2>
+  <p>
+    Data is used only to provide the app's single feature: uploading and scheduling videos on the Citizen Science channel.
+    It is not used for advertising, profiling, market research, or to train AI or machine-learning models.
+  </p>
 
-  <h2>Contact</h2>
-  <p><a href="mailto:citizen.science.tube@gmail.com">citizen.science.tube@gmail.com</a></p>
+  <h2>5. Sharing and disclosure</h2>
+  <p>
+    We do not sell, rent, transfer or share Google user data with any third party. Video files and metadata are sent
+    only to Google/YouTube through the YouTube Data API, as required to perform the upload. Data may be disclosed only
+    if required by law.
+  </p>
 
-  <p><a href="index.html">← Home</a></p>
-</main>
+  <h2>6. Google API Services User Data Policy (Limited Use)</h2>
+  <p>
+    Citizen Science Uploader's use and transfer of information received from Google APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+    including the Limited Use requirements.
+  </p>
+
+  <h2>7. Storage and security</h2>
+  <p>
+    OAuth tokens and video IDs are stored on a private server controlled by the channel owner, with access restricted
+    to the owner. Connections to Google use HTTPS/TLS. Tokens are never published or shared.
+  </p>
+
+  <h2>8. Retention and deletion</h2>
+  <ul>
+    <li>Temporary video files are deleted after the upload finishes.</li>
+    <li>OAuth tokens are kept only while the app is in use and are deleted immediately when access is revoked or the app is retired.</li>
+    <li>You can revoke the app's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>To request deletion of any stored data, email <a href="mailto:citizen.science.tube@gmail.com">citizen.science.tube@gmail.com</a>; we will delete it within 30 days.</li>
+  </ul>
+
+  <h2>9. YouTube API Services</h2>
+  <p>
+    The app uses YouTube API Services. By using it you agree to the
+    <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of data is described in the
+    <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+  </p>
+
+  <h2>10. Prohibited content</h2>
+  <p>
+    The app uploads only original educational content. It is never used to create, generate or distribute sexually
+    explicit or intimate imagery, including AI-generated non-consensual intimate imagery.
+  </p>
+
+  <h2>11. Children</h2>
+  <p>The app is not directed at children and does not knowingly collect data from anyone under 13.</p>
+
+  <h2>12. Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be posted on this page with a new "Last updated" date.</p>
+
+  <h2>13. Contact</h2>
+  <p>Questions or requests: <a href="mailto:citizen.science.tube@gmail.com">citizen.science.tube@gmail.com</a></p>
 </body>
 </html>
